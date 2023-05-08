@@ -30,6 +30,7 @@ export class Component {
 
   async setValue(value) {
     await this.initPromise;
-    this.action.component.importAction(value.action);
+    if (value.action) this.action.component.importAction(value.action);
+    else this.action.component.importAction(value);
   }
 }
