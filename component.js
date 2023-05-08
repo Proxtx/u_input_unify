@@ -20,10 +20,12 @@ export class Component {
   }
 
   async getValue() {
-    return {
-      action: await this.action.component.exportAction(),
-      evaluate: true,
-    };
+    if (this.config.evaluate)
+      return {
+        action: await this.action.component.exportAction(),
+        evaluate: true,
+      };
+    return await this.action.component.exportAction();
   }
 
   async setValue(value) {

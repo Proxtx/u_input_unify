@@ -1,4 +1,10 @@
 {
   "type": "unify",
-  "config": {}
+  "config": {
+    "evaluate": {
+      "name": "Evaluate as input",
+      "type": "bool",
+      "checked": true
+    }
+  }
 }
