@@ -4,7 +4,7 @@
     "evaluate": {
       "name": "Evaluate as input",
       "type": "bool",
-      "checked": true
+      "value": true
     }
   }
 }

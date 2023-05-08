@@ -7,7 +7,7 @@ export class Component {
   async init() {
     this.action = this.document.getElementById("action");
     await uiBuilder.ready(this.action);
-    this.action.component.init();
+    await this.action.component.init();
     this.action.component.box.style.margin = "0";
     this.action.component.box.style.borderRadius = "var(--borderRadius)";
     this.action.component.box.style.border = getComputedStyle(
