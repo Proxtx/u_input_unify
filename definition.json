@@ -1,10 +1,4 @@
 {
   "type": "unify",
-  "config": {
-    "pwd": {
-      "name": "Password",
-      "type": "text",
-      "placeholder": "Password"
-    }
-  }
+  "config": {}
 }

@@ -23,7 +23,6 @@ export class Component {
     return {
       action: await this.action.component.exportAction(),
       evaluate: true,
-      pwd: this.config.pwd,
     };
   }
 
