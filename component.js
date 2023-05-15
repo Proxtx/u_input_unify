@@ -24,6 +24,7 @@ export class Component {
       return {
         action: await this.action.component.exportAction(),
         evaluate: true,
+        type: "unify",
       };
     return await this.action.component.exportAction();
   }
